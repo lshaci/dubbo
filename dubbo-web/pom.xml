@@ -3,15 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lshaci.dubbo</groupId>
-	<artifactId>dubbo-domain</artifactId>
+	<artifactId>dubbo-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>lshaci</name>
 	<description>learning for dubbo</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.version>0.0.1-SNAPSHOT</project.version>
 	</properties>
-
 </project>
