@@ -1,4 +1,4 @@
-package com.lshaci.dubbo.configuration;
+package com.lshaci.dubbo.config;
 
 import javax.sql.DataSource;
 
@@ -13,9 +13,9 @@ import com.alibaba.druid.pool.DruidDataSource;
 
 @Configuration
 @PropertySource("classpath:config/properties/datasource.properties")
-public class DataSourceConfiguration {
+public class DataSourceConfig {
 	
-	private Logger logger = LoggerFactory.getLogger(DataSourceConfiguration.class);
+	private Logger logger = LoggerFactory.getLogger(DataSourceConfig.class);
 	
 	@Bean
 	@ConfigurationProperties(prefix = "druid.datasource")
