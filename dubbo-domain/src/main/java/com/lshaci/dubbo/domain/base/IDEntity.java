@@ -9,8 +9,10 @@ import java.io.Serializable;
  *
  * @param <ID>		实体主键的类型
  */
-public abstract class IDEntity<ID extends Serializable> {
+public abstract class IDEntity<ID extends Serializable> implements Serializable  {
 
+	private static final long serialVersionUID = -2044745800861094697L;
+	
 	private ID id;
 
 	public ID getId() {

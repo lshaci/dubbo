@@ -4,6 +4,8 @@ import com.lshaci.dubbo.domain.base.IDEntity;
 
 public class City extends IDEntity<Long> {
 	
+	private static final long serialVersionUID = -7076600924887780560L;
+
 	private String name;
 	
 	private String state;
