@@ -15,10 +15,11 @@ public class CityMapperTest extends SpringTest {
 	@Test
 	public void testSave() throws Exception {
 		City city = new City();
-		city.setName("成都");
+		city.setName("北京");
 		city.setState("启用");
 		
 		int save = mapper.save(city);
+		int i = 1 / 0;
 		System.out.println(save);
 	}
 	

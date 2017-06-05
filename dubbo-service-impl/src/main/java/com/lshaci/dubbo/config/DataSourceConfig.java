@@ -8,21 +8,30 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
 @Configuration
 @PropertySource("classpath:config/properties/datasource.properties")
 public class DataSourceConfig {
-	
+
 	private Logger logger = LoggerFactory.getLogger(DataSourceConfig.class);
-	
+
 	@Bean
 	@ConfigurationProperties(prefix = "druid.datasource")
 	public DataSource dataSource() {
 		logger.debug("Init DataSource use DruidDataSource...");
-		
+
 		return new DruidDataSource();
+	}
+
+	@Bean
+	public PlatformTransactionManager transactionManager() {
+		logger.debug("Init transactionManager...");
+		
+		return new DataSourceTransactionManager(dataSource());
 	}
 
 }

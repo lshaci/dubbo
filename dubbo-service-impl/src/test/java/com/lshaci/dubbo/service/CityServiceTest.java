@@ -6,13 +6,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.lshaci.dubbo.SpringTest;
 import com.lshaci.dubbo.domain.City;
 
-public class CityServiceImplTest extends SpringTest {
+public class CityServiceTest extends SpringTest {
 	
 	@Autowired
 	private CityService citySrevice;
 
 	@Test
 	public void testSave() {
+		City city = new City();
+		city.setName("杭州");
+		city.setState("启用");
+		
+		int save = citySrevice.save(city);
+		System.out.println(city.getId());
 	}
 
 	@Test
