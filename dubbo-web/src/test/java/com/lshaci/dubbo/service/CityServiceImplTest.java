@@ -10,7 +10,7 @@ public class CityServiceImplTest extends SpringTest {
 	
 	@Autowired
 	private CityService citySrevice;
-
+	
 	@Test
 	public void testSave() {
 	}
