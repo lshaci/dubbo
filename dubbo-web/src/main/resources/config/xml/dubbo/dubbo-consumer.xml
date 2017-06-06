@@ -16,6 +16,6 @@
 	<dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}" check="false" />
 
 	<!-- 引用dubbo服务 -->	
-	<dubbo:reference id="cityService" interface="com.lshaci.dubbo.service.CityService" />
+	<dubbo:reference id="cityService" interface="com.lshaci.dubbo.service.CityService" check="false" />
 
 </beans>  
