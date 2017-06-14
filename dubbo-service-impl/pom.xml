@@ -6,7 +6,7 @@
 	<artifactId>dubbo-service-impl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	
+
 	<name>lshaci</name>
 	<description>learning for dubbo</description>
 
@@ -33,6 +33,16 @@
 		<dependency>
 			<groupId>com.lshaci.dubbo</groupId>
 			<artifactId>dubbo-service-inf</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<!-- base mapper -->
+		<dependency>
+			<groupId>com.lshaci.dubbo</groupId>
+			<artifactId>dubbo-base-mapper</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- spring boot mybatis -->

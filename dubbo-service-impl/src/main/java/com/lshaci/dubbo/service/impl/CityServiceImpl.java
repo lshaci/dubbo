@@ -47,7 +47,7 @@ public class CityServiceImpl implements CityService {
 	@Override
 	public List<City> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return cityMapper.findAll();
 	}
 
 	@Override

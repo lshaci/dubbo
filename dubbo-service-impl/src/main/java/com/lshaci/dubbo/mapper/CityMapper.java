@@ -2,8 +2,8 @@ package com.lshaci.dubbo.mapper;
 
 import org.apache.ibatis.annotations.Select;
 
+import com.lshaci.dubbo.base.mapper.BaseCrudMapper;
 import com.lshaci.dubbo.domain.City;
-import com.lshaci.dubbo.mapper.base.BaseCrudMapper;
 
 
 public interface CityMapper extends BaseCrudMapper<City, Long> {
