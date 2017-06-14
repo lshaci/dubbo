@@ -7,11 +7,19 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>lshaci</name>
+	<name>Domain</name>
 	<description>learning for dubbo</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.version>0.0.1-SNAPSHOT</project.version>
 	</properties>
-
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.lshaci.dubbo</groupId>
+			<artifactId>dubbo-base-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
 </project>

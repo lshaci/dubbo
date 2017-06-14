@@ -1,6 +1,6 @@
 package com.lshaci.dubbo.domain;
 
-import com.lshaci.dubbo.domain.base.IDEntity;
+import com.lshaci.dubbo.base.domain.IDEntity;
 
 public class City extends IDEntity<Long> {
 	
