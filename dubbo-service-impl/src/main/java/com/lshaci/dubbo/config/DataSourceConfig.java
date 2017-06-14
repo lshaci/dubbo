@@ -31,7 +31,7 @@ public class DataSourceConfig {
 
 	@Bean
 	public PlatformTransactionManager transactionManager() {
-		logger.debug("Init transactionManager...");
+		logger.debug("Init TransactionManager...");
 		
 		return new DataSourceTransactionManager(dataSource());
 	}
