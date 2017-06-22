@@ -12,7 +12,7 @@ import com.lshaci.dubbo.mapper.CityMapper;
 import com.lshaci.dubbo.service.CityService;
 
 @Service("cityService")
-@Transactional(readOnly = true, noRollbackFor = Exception.class, propagation = Propagation.SUPPORTS)
+@Transactional(readOnly = true, rollbackFor = Exception.class, propagation = Propagation.SUPPORTS)
 public class CityServiceImpl implements CityService {
 	
 	@Autowired
@@ -28,8 +28,8 @@ public class CityServiceImpl implements CityService {
 	@Override
 	@Transactional
 	public int delete(Long id) {
-		// TODO Auto-generated method stub
-		return 0;
+		int i = cityMapper.delete(id);
+		return i;
 	}
 
 	@Override
