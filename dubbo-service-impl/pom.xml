@@ -23,6 +23,7 @@
 		<dubbo.version>2.5.3</dubbo.version>
 		<zkclient.version>0.10</zkclient.version>
 		<zookeeper.version>3.4.8</zookeeper.version>
+		<logstash.logback.version>4.11</logstash.logback.version>
 		<mybatis.spring.boot.version>1.3.0</mybatis.spring.boot.version>
 
 		<project.version>0.0.1-SNAPSHOT</project.version>
@@ -62,6 +63,12 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
 			<version>${druid.version}</version>
+		</dependency>
+		<!-- logstash logback -->
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+			<version>${logstash.logback.version}</version>
 		</dependency>
 		<!-- spring boot test -->
 		<dependency>
