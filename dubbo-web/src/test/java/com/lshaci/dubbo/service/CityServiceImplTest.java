@@ -25,7 +25,7 @@ public class CityServiceImplTest extends SpringTest {
 
 	@Test
 	public void testFindOne() {
-		City city = citySrevice.findOne(1L);
+		City city = citySrevice.findOne(5L);
 		System.out.println(city);
 	}
 	

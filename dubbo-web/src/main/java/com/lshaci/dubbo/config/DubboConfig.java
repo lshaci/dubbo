@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("classpath:config/properties/dubbo.properties")
+@PropertySource("classpath:config/properties/dubbo-${spring.profiles.active}.properties")
 @ImportResource("classpath:config/xml/dubbo/dubbo-consumer.xml")
 public class DubboConfig {
 
