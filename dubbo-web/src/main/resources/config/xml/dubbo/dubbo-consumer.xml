@@ -14,6 +14,8 @@
 		check: 注册中心不存在时，是否报错
 	 -->
 	<dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}" check="false" />
+	
+	<dubbo:consumer timeout="3000" />
 
 	<!-- 引用dubbo服务 -->	
 	<dubbo:reference id="cityService" interface="com.lshaci.dubbo.service.CityService" check="false" />
